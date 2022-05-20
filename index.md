@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+# Chào bạn tới với bài hướng dẫn cấu hình và cài đặt CI/CD bằng Bitrise cho iOS Project
 
-You can use the [editor on GitHub](https://github.com/sonvll95/bitrise.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Bài viết này mình sẽ hướng dẫn mọi người cơ bản về cấu hình Bitrise CI cho iOS Project. Để tự động run & build iOS project từ Bitbucket. Và đối tượng hướng tới cho bài này là các bạn:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+* Các bạn chưa biết gì về CI
+* Các bạn iOS Dev muốn sài các tools auto
+* Các bạn team lead dự án
+* Các bạn muốn tự vọc vạch lúc rảnh
 
-### Markdown
+Trước khi bắt đầu thì nắm một số khái niệm trước nha. 😎
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+CI là Continuous Integration.
 
-```markdown
-Syntax highlighted code block
+> Nó là phương pháp phát triển phần mềm yêu cầu các thành viên của team tích hợp công việc của họ thường xuyên, mỗi ngày ít nhất một lần. Mỗi tích hợp được “build” tự động (bao gồm cả test) nhằm phát hiện lỗi nhanh nhất có thể. Cả team nhận thấy rằng cách tiếp cận này giảm thiểu vấn đề tích hợp và cho phép phát triển phần mềm nhanh hơn.
 
-# Header 1
-## Header 2
-### Header 3
+CD là Continuous Delivery (tạm dịch là chuyển giao liên tục)
 
-- Bulleted
-- List
+> lại nâng cao hơn một chút, bằng cách triển khai tất cả thay đổi về code (đã được build và test) đến môi trường testing hoặc staging. Continuous Delivery cho phép developer tự động hóa phần testing bên cạnh việc sử dụng unit test, kiểm tra phần mềm qua nhiều thước đo trước khi triển khai cho khách hàng (production). Những bài test này bao gồm UI testing, load testing, integration testing, API testing… Nó tự động hoàn toàn quy trình release phần mềm.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sonvll95/bitrise.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
